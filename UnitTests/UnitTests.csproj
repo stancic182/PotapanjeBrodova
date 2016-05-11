@@ -55,6 +55,10 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="MrežaZaFlotu.cs" />
+    <Compile Include="MrežaZaFlotu.Designer.cs">
+      <DependentUpon>MrežaZaFlotu.cs</DependentUpon>
+    </Compile>
     <Compile Include="TestBroda.cs" />
     <Compile Include="TestBrodograditelja.cs" />
     <Compile Include="TestKlasičnogEliminatoraPolja.cs" />
