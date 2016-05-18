@@ -55,7 +55,7 @@ namespace UnitTests
         public void Mreža_DajPoljaZaBrodVraćaListuOd3HorizontalnaPolja()
         {
             Mreža m = new Mreža(10, 10);
-            var polja = m.DajPoljaZaBrod(Orjentacija.Horizontalno, new Polje(3, 6), 3);
+            var polja = m.DajPoljaZaBrod(Orijentacija.Horizontalno, new Polje(3, 6), 3);
             Assert.AreEqual(3, polja.Count());
             Assert.IsTrue(polja.Contains(new Polje(3, 6)));
             Assert.IsTrue(polja.Contains(new Polje(3, 7)));
@@ -66,7 +66,7 @@ namespace UnitTests
         public void Mreža_DajPoljaZaBrodVraćaListuOd2VertikalnaPolja()
         {
             Mreža m = new Mreža(10, 10);
-            var polja = m.DajPoljaZaBrod(Orjentacija.Vertikalno, new Polje(3, 6), 2);
+            var polja = m.DajPoljaZaBrod(Orijentacija.Vertikalno, new Polje(3, 6), 2);
             Assert.AreEqual(2, polja.Count());
             Assert.IsTrue(polja.Contains(new Polje(3, 6)));
             Assert.IsTrue(polja.Contains(new Polje(4, 6)));

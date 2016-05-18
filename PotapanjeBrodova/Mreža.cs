@@ -3,7 +3,7 @@ using System.Diagnostics;
 
 namespace PotapanjeBrodova
 {
-    public enum Orjentacija
+    public enum Orijentacija
     {
         Horizontalno,
         Vertikalno
@@ -57,12 +57,12 @@ namespace PotapanjeBrodova
             polja[redak, stupac] = null;
         }
 
-        public IEnumerable<Polje> DajPoljaZaBrod(Orjentacija smjer, Polje početno, int duljinaBroda)
+        public IEnumerable<Polje> DajPoljaZaBrod(Orijentacija smjer, Polje početno, int duljinaBroda)
         {
             int redak = početno.Redak;
             int stupac = početno.Stupac;
-            int deltaRedak = smjer == Orjentacija.Horizontalno ? 0 : 1;
-            int deltaStupac = smjer == Orjentacija.Vertikalno ? 0 : 1;
+            int deltaRedak = smjer == Orijentacija.Horizontalno ? 0 : 1;
+            int deltaStupac = smjer == Orijentacija.Vertikalno ? 0 : 1;
             List<Polje> poljaZaBrod = new List<Polje>();
             for (int i = 0; i < duljinaBroda; ++i)
             {

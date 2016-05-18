@@ -15,7 +15,7 @@ namespace UnitTests
             int stupaca = 10;
             int duljinaBroda = 4;
             Polje početnoPolje = new Polje(3, 2);
-            Orjentacija smjer = Orjentacija.Vertikalno;
+            Orijentacija smjer = Orijentacija.Vertikalno;
 
             Mreža m = new Mreža(redaka, stupaca);
             var poljaBroda = m.DajPoljaZaBrod(smjer, početnoPolje, duljinaBroda);
@@ -39,7 +39,7 @@ namespace UnitTests
             int stupaca = 10;
             int duljinaBroda = 4;
             Polje početnoPolje = new Polje(0, 0);
-            Orjentacija smjer = Orjentacija.Horizontalno;
+            Orijentacija smjer = Orijentacija.Horizontalno;
 
             Mreža m = new Mreža(redaka, stupaca);
             var poljaBroda = m.DajPoljaZaBrod(smjer, početnoPolje, duljinaBroda);
@@ -62,7 +62,7 @@ namespace UnitTests
             int stupaca = 10;
             int duljinaBroda = 4;
             Polje početnoPolje = new Polje(0, stupaca - 1);
-            Orjentacija smjer = Orjentacija.Vertikalno;
+            Orijentacija smjer = Orijentacija.Vertikalno;
 
             Mreža m = new Mreža(redaka, stupaca);
             var poljaBroda = m.DajPoljaZaBrod(smjer, početnoPolje, duljinaBroda);
@@ -85,7 +85,7 @@ namespace UnitTests
             int stupaca = 10;
             int duljinaBroda = 4;
             Polje početnoPolje = new Polje(redaka - 1, stupaca - duljinaBroda);
-            Orjentacija smjer = Orjentacija.Horizontalno;
+            Orijentacija smjer = Orijentacija.Horizontalno;
 
             Mreža m = new Mreža(redaka, stupaca);
             var poljaBroda = m.DajPoljaZaBrod(smjer, početnoPolje, duljinaBroda);
@@ -108,7 +108,7 @@ namespace UnitTests
             int stupaca = 10;
             int duljinaBroda = 4;
             Polje početnoPolje = new Polje(redaka - duljinaBroda, 0);
-            Orjentacija smjer = Orjentacija.Vertikalno;
+            Orijentacija smjer = Orijentacija.Vertikalno;
 
             Mreža m = new Mreža(redaka, stupaca);
             var poljaBroda = m.DajPoljaZaBrod(smjer, početnoPolje, duljinaBroda);
