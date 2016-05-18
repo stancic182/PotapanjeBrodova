@@ -51,19 +51,19 @@ namespace PotapanjeBrodova
             }
         }
 
-        private IEnumerable<IEnumerable<Polje>> DajPoljaUNastavku(Smjer smjer1, Smjer smjer2)
+        private IEnumerable<IEnumerable<Polje>> DajPoljaUNastavku(Smjer smjer1, Smjer smjer2 )
         {
             List<IEnumerable<Polje>> liste = new List<IEnumerable<Polje>>();
             int redak0 = pogođenaPolja[0].Redak;
             int stupac0 = pogođenaPolja[0].Stupac;
-            var l1 = Mreža.DajPoljaUZadanomSmjeru(redak0, stupac0, smjer1);
+            var l1 = mreža.DajPoljaUZadanomSmjeru(redak0, stupac0, smjer1);
             if (l1.Count() > 0)
                 liste.Add(l1);
 
             int n = pogođenaPolja.Count() - 1;
             int redakN = pogođenaPolja[n].Redak;
             int stupacN = pogođenaPolja[n].Stupac;
-            var l2 = Mreža.DajPoljaUZadanomSmjeru(redak0, stupac0, smjer2);
+            var l2 = mreža.DajPoljaUZadanomSmjeru(redak0, stupac0, smjer2);
             if (l2.Count() > 0)
                 liste.Add(l2);
             return liste;
