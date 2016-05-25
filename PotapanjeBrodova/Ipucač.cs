@@ -7,5 +7,8 @@ namespace PotapanjeBrodova
 {
     public interface IPucač
     {
+        Polje UputiPucanj();
+        void EvidentiranjRezultat(RezultatGađanja rezultat);
+
     }
 }

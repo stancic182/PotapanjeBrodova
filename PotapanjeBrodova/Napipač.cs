@@ -82,6 +82,11 @@ namespace PotapanjeBrodova
 
         }
 
+        public void EvidentiranjRezultat(RezultatGađanja rezultat)
+        {
+            throw new NotImplementedException();
+        }
+
         private Mreža mreža;
         private int duljinaBroda;
         private Random slučajni = new Random();
